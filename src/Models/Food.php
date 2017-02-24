@@ -19,7 +19,7 @@ class Food extends Model
 
     public function getIngredientListAttribute()
     {
-        return ucfirst($this->ingredients->implode('name', ', '));
+        return $this->ingredients->implode('name', ', ');
     }
 
     public function getImagePathAttribute()

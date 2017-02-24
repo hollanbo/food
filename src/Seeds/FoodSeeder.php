@@ -69,12 +69,13 @@ class FoodSeeder extends Seeder
         $ingredients = [
             [
                 'id' => 10,
-                'name' => 'sir'
+                'name' => 'paradajz'
             ],
             [
                 'id' => 11,
-                'name' => 'paradajz'
+                'name' => 'sir'
             ],
+
             [
                 'id' => 12,
                 'name' => 'šunka'
@@ -101,7 +102,7 @@ class FoodSeeder extends Seeder
             ],
             [
                 'id' => 18,
-                'name' => 'edamec'
+                'name' => 'gorgonzola'
             ],
             [
                 'id' => 19,
@@ -201,6 +202,10 @@ class FoodSeeder extends Seeder
             [
                 'food_id' => 13,
                 'ingredient_id' => 10
+            ],
+            [
+                'food_id' => 13,
+                'ingredient_id' => 11
             ],
             [
                 'food_id' => 13,
