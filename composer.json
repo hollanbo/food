@@ -1,0 +1,18 @@
+{
+    "name": "hollanbo/food",
+    "description": "Food menus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Borut Hollan",
+            "email": "borut.hollan@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "hollanbo\\Food\\": "src"
+        }
+    }
+}
