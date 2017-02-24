@@ -16,6 +16,7 @@ class CreateFoodTable extends Migration
         Schema::create('hollanbo_food_food', function (Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->string('name');
+            $table->string('photo')->default('');
             $table->integer('author')->nullable();
             $table->timestamps();
         });

@@ -1,17 +1,15 @@
 <div class="col-xs-12">
     <div>
         <div class="inline-block">
-            {{ $item['photo'] }}
+
         </div>
         <div class="inline-block">
 
             <div>
-                {{ $item['name'] }}
+                {{ $item->name }}
             </div>
             <div>
-                @foreach($item['ingredients'] as $ingredient)
-                    {{ $ingredient }}
-                @endforeach
+                {{ $item->ingredient_list }}
             </div>
         </div>
     </div>
