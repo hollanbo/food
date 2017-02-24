@@ -9,6 +9,17 @@ class FoodController extends Controller
 {
     public function index()
     {
-        dd('balls');
+        $food = [
+            [
+                'name' => 'Margherita',
+                'ingredients' => [
+                    'tomato',
+                    'cheese',
+                    'sperm'
+                ],
+                'photo' => 'src',
+            ]
+        ];
+        return view('hollanbo_food::menu', ['food' => $food]);
     }
 }
