@@ -3,6 +3,7 @@
 namespace hollanbo\Food\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use View;
 
 class Food extends Model
 {
@@ -19,5 +20,14 @@ class Food extends Model
     public function getIngredientListAttribute()
     {
         return ucfirst($this->ingredients->implode('name', ', '));
+    }
+
+    public function getImagePathAttribute()
+    {
+        if (!empty($this->photo)) {
+            return '/hollanbo_food_photos/' . $this->photo;
+        }
+
+        return '';
     }
 }

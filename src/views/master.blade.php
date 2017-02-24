@@ -16,6 +16,32 @@
             .inline-block {
                 display: inline-block;
             }
+
+            .hollanbo-food-title {
+                font-size: 24px;
+            }
+
+            .hollanbo-food-ingredients {
+                font-size: 20px;
+                font-style: italic;
+                text-indent: 16px;
+            }
+
+            .hollanbo-food-img > img {
+                max-width: 150px;
+                max-height: 150px;
+            }
+
+            .hollanbo-food-img {
+                width: 150px;
+                height: 100px;
+                margin-right: 20px
+            }
+
+            .va-top {
+                vertical-align: top;
+            }
+
         </style>
     </head>
     <body>
