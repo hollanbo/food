@@ -23,6 +23,7 @@ class FoodServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        include __DIR__.'/routes.php';
+        $this->app->make('hollanbo\Food\Controllers\FoodController');
     }
 }
