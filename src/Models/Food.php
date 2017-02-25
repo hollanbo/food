@@ -25,7 +25,8 @@ class Food extends Model
     public function getImagePathAttribute()
     {
         if (!empty($this->photo)) {
-            return '/hollanbo_food_photos/' . $this->photo;
+            $path = '/hollanbo_food_photos/' . $this->photo;
+            return file_exists(public_path($path)) ? $path : '';
         }
 
         return '';
